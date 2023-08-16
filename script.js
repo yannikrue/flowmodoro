@@ -17,10 +17,10 @@ function startTimer() {
         timerText.textContent = "Arbeiten...";
         
 
-        const minTime = 1000; // 4 minutes in milliseconds
-        const maxTime = 5000; // 8 minutes in milliseconds
-        // const minTime = 4 * 60 * 1000; // 4 minutes in milliseconds
-        // const maxTime = 8 * 60 * 1000; // 8 minutes in milliseconds
+        // const minTime = 1000; // 4 minutes in milliseconds
+        // const maxTime = 5000; // 8 minutes in milliseconds
+        const minTime = 4 * 60 * 1000; // 4 minutes in milliseconds
+        const maxTime = 8 * 60 * 1000; // 8 minutes in milliseconds
         const randomTime = Math.floor(Math.random() * (maxTime - minTime + 1)) + minTime;
         
         timerInterval = setTimeout(() => {
